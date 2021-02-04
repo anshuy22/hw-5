@@ -73,6 +73,7 @@ window.addEventListener('DOMContentLoaded', function() {
 let allridesbutton =  document.querySelector('#all-filter')
 allridesbutton.addEventListener('click', async function(event){
   event.preventDefault()
+  document.querySelector('.rides').innerHTML=''
   console.log("All Rides button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
   let response = await fetch(url)
@@ -80,10 +81,11 @@ allridesbutton.addEventListener('click', async function(event){
 renderRides(json)
 
 })
+
 let nooberpurplebutton =  document.querySelector('#noober-purple-filter')
 nooberpurplebutton.addEventListener('click', async function(event){
   event.preventDefault()
- renderRides.innerHTML=' '
+  document.querySelector('.rides').innerHTML=''
   console.log("Noober Purple button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
   let response = await fetch(url)
@@ -103,7 +105,7 @@ renderRides(newArray)
 let nooberpoolbutton =  document.querySelector('#noober-pool-filter')
 nooberpoolbutton.addEventListener('click', async function(event){
   event.preventDefault()
-  renderRides.innerHTML=''
+  document.querySelector('.rides').innerHTML=''
   console.log("Noober Pool button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
   let response = await fetch(url)
@@ -123,7 +125,7 @@ renderRides(newArray)
 let nooberxlbutton =  document.querySelector('#noober-xl-filter')
 nooberxlbutton.addEventListener('click', async function(event){
   event.preventDefault()
-  renderRides.innerHTML=''
+  document.querySelector('.rides').innerHTML=''
   console.log("Noober XL button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
   let response = await fetch(url)
@@ -143,7 +145,7 @@ renderRides(newArray)
 let nooberxbutton =  document.querySelector('#noober-x-filter')
 nooberxbutton.addEventListener('click', async function(event){
   event.preventDefault()
-  renderRides.innerHTML=''
+  document.querySelector('.rides').innerHTML=''
   console.log("Noober X button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
   let response = await fetch(url)
