@@ -73,6 +73,11 @@ window.addEventListener('DOMContentLoaded', function() {
 let allridesbutton =  document.querySelector('#all-filter')
 allridesbutton.addEventListener('click', async function(event){
   event.preventDefault()
+  allridesbutton.classList.add('border-blue-500','text-blue-500')
+  nooberpurplebutton.classList.remove('border-purple-500','text-purple-500')
+  nooberpoolbutton.classList.remove('border-blue-500', 'text-blue-500')
+  nooberxlbutton.classList.remove('border-blue-500','text-blue-500')
+  nooberxbutton.classList.remove('border-blue-500','text-blue-500')
   document.querySelector('.rides').innerHTML=''
   console.log("All Rides button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
@@ -85,6 +90,11 @@ renderRides(json)
 let nooberpurplebutton =  document.querySelector('#noober-purple-filter')
 nooberpurplebutton.addEventListener('click', async function(event){
   event.preventDefault()
+  allridesbutton.classList.remove('border-blue-500','text-blue-500')
+  nooberpurplebutton.classList.add('border-purple-500','text-purple-500')
+  nooberpoolbutton.classList.remove('border-blue-500', 'text-blue-500')
+  nooberxlbutton.classList.remove('border-blue-500','text-blue-500')
+  nooberxbutton.classList.remove('border-blue-500','text-blue-500')
   document.querySelector('.rides').innerHTML=''
   console.log("Noober Purple button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
@@ -105,6 +115,11 @@ renderRides(newArray)
 let nooberpoolbutton =  document.querySelector('#noober-pool-filter')
 nooberpoolbutton.addEventListener('click', async function(event){
   event.preventDefault()
+  allridesbutton.classList.remove('border-blue-500','text-blue-500')
+  nooberpurplebutton.classList.remove('border-purple-500','text-purple-500')
+  nooberpoolbutton.classList.add('border-blue-500', 'text-blue-500')
+  nooberxlbutton.classList.remove('border-blue-500','text-blue-500')
+  nooberxbutton.classList.remove('border-blue-500','text-blue-500')
   document.querySelector('.rides').innerHTML=''
   console.log("Noober Pool button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
@@ -125,6 +140,11 @@ renderRides(newArray)
 let nooberxlbutton =  document.querySelector('#noober-xl-filter')
 nooberxlbutton.addEventListener('click', async function(event){
   event.preventDefault()
+  allridesbutton.classList.remove('border-blue-500','text-blue-500')
+  nooberpurplebutton.classList.remove('border-purple-500','text-purple-500')
+  nooberpoolbutton.classList.remove('border-blue-500', 'text-blue-500')
+  nooberxlbutton.classList.add('border-blue-500','text-blue-500')
+  nooberxbutton.classList.remove('border-blue-500','text-blue-500')
   document.querySelector('.rides').innerHTML=''
   console.log("Noober XL button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
@@ -145,6 +165,11 @@ renderRides(newArray)
 let nooberxbutton =  document.querySelector('#noober-x-filter')
 nooberxbutton.addEventListener('click', async function(event){
   event.preventDefault()
+  allridesbutton.classList.remove('border-blue-500','text-blue-500')
+  nooberpurplebutton.classList.remove('border-purple-500','text-purple-500')
+  nooberpoolbutton.classList.remove('border-blue-500', 'text-blue-500')
+  nooberxlbutton.classList.remove('border-blue-500','text-blue-500')
+  nooberxbutton.classList.add('border-blue-500','text-blue-500')
   document.querySelector('.rides').innerHTML=''
   console.log("Noober X button is clicked")
   let  url= 'https://kiei451.com/api/rides.json'
